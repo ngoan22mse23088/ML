@@ -1,0 +1,29 @@
+<!-- Add a logo image centered above the existing content -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="/assets/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
+</div>
+
+<!-- File input and upload button -->
+<div style="text-align: center;">
+  <input type="file" (change)="onFileSelected($event)">
+  <button (click)="onUpload()">Predict</button>
+</div>
+
+<!-- Section for displaying images -->
+<div>
+  <!-- Uncomment and use the following if needed -->
+  <!-- <img [src]="getImageUrl()"> -->
+  <!-- <img src="data:image/png;base64, {{imageUrl}}" /> -->
+</div>
+
+<!-- Display predicted class and image -->
+<!-- <div>
+  <p>Predicted Class: <span id="predicted-class"></span></p>
+  <img id="predicted-image" src="" alt="Predicted Image">
+</div> -->
+<div class="predicted-info">
+  <p class="predicted-class">Predicted Class: <span id="predicted-class"></span></p>
+  <div class="predicted-image-container">
+    <img id="predicted-image" src="" alt="Predicted Image">
+  </div>
+</div>

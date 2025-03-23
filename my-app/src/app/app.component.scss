@@ -1,0 +1,33 @@
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .image-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+    img {
+      width: 150px;
+      height: auto;
+      display: block;
+    }
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .predicted-info {
+    text-align: center; /* Căn giữa toàn bộ phần tử */
+    margin-top: 20px; /* Khoảng cách trên */
+  }
+  
+  .predicted-class {
+    font-size: 18px; /* Kích thước chữ */
+    margin-bottom: 10px; /* Khoảng cách dưới */
+  }
